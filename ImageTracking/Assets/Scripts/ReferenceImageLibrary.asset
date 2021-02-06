@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5489056084505776302
+  m_GuidHigh: 92424811914430644
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4814134061898889490
+      m_GuidHigh: 4097052241421668495
+    m_SerializedTextureGuid:
+      m_GuidLow: 15306659651271902801
+      m_GuidHigh: 13720281783615172875
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: Batman
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4998045171577345048
+      m_GuidHigh: 14400211633032588691
+    m_SerializedTextureGuid:
+      m_GuidLow: 3766088051251101080
+      m_GuidHigh: 602053489461593800
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: Spidey
+    m_Texture: {fileID: 0}
