@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -232,9 +232,10 @@ GameObject:
   - component: {fileID: 758845575}
   - component: {fileID: 758845574}
   - component: {fileID: 758845573}
+  - component: {fileID: 758845577}
   m_Layer: 0
   m_Name: PlacementIndicator
-  m_TagString: Untagged
+  m_TagString: Indicator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,6 +315,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &758845577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758845572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7899db2483645699d03736352984ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelIsSpawned: 0
 --- !u!1 &962553213
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1203728995}
   - component: {fileID: 1203728996}
+  - component: {fileID: 1203728997}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -509,6 +524,21 @@ MonoBehaviour:
   arRaycastManager: {fileID: 1859216032}
   virtualFloor: {fileID: 1618425778}
   placementIndicator: {fileID: 758845572}
+--- !u!114 &1203728997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203728994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962feb8bc01d143008a12a383d501dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arCamera: {fileID: 1947471517}
+  placementIndicator: {fileID: 758845572}
+  spawnedObjectWrap: {fileID: 1510719788}
 --- !u!1 &1510719788
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,7 +588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1618425779
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -705,7 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 5518225479401351945, guid: a18201a3e34ed4b18be8e84938ff9c75,
+  m_PlanePrefab: {fileID: 7898514363023973616, guid: a18201a3e34ed4b18be8e84938ff9c75,
     type: 3}
   m_DetectionMode: 1
 --- !u!1 &1947471516
@@ -752,7 +782,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 20
+  far clip plane: 400
   field of view: 60
   orthographic: 0
   orthographic size: 5

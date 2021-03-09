@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4744263248840390779
+  m_GuidHigh: 5388905309360097923
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4652174131257203425
+      m_GuidHigh: 16813136056833696670
+    m_SerializedTextureGuid:
+      m_GuidLow: 4940496025286127471
+      m_GuidHigh: 3536669589964518457
+    m_Size: {x: 0.0115504805, y: 0.01}
+    m_SpecifySize: 1
+    m_Name: Menu_UnityChan
+    m_Texture: {fileID: 2800000, guid: 8968af6f2af5449039f4c20541c61431, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5125721063927756878
+      m_GuidHigh: 3218923521911972243
+    m_SerializedTextureGuid:
+      m_GuidLow: 15278865479997745131
+      m_GuidHigh: 10639651681754003866
+    m_Size: {x: 0.009685382, y: 0.01}
+    m_SpecifySize: 1
+    m_Name: Menu_Fox
+    m_Texture: {fileID: 2800000, guid: 023e67eb6f34d4099ab9d550d5a2a793, type: 3}
